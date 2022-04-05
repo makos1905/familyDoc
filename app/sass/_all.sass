@@ -4,6 +4,9 @@
   max-width: $wc*1px
   margin: auto
 
+.hidden
+  display: none
+
 header
   display: flex
   align-items: center
@@ -19,6 +22,7 @@ header
   align-items: center
   width: 300/$wc*100%
   & img
+    width: 95/300*100%
     max-width: 95px
   & span
     width: 190/300*100%
@@ -28,7 +32,7 @@ header
     color: $c1
 .address, .working
   & span
-    display: block
+    display: flex
     color: $c1
     font-weight: 500
     font-size: 18px
@@ -37,35 +41,52 @@ header
 
 .address, .working
   & small
+    display: block
     color: $c5
     font-size: 14px
     line-height: 17px
 
 .address
-  width: 190/$wc*100%
-  margin: 0 60/$wc*100%
+  width: 190px
+  margin: 0 60px
+  & span
+    &::before
+      content: ''
+      display: inline-block
+      width: 22px
+      height: 22px
+      background-image: url("../img/icon/MapPin.png")
+      margin-right: 8px
   & small
     font-weight: 600
 
 .working
-  width: 160/$wc*100%
+  width: 160px
+  & span
+    &::before
+      content: ''
+      display: inline-block
+      width: 22px
+      height: 22px
+      background-image: url("../img/icon/Clock.png")
+      margin-right: 8px
+
   & small
     font-weight: 400
 
 .social
-  width: 65/$wc*100%
+  width: 65px
   display: flex
   justify-content: space-between
   margin-left: auto
 
 .phones
-  width: 178/$wc*100%
+  width: 178px
   display: flex
   flex-wrap: wrap
   justify-content: end
   margin-left: 60px
   & span
-    // flex: 0 1 100%
     color: $c5
     font-size: 20px
     line-height: 28px
@@ -77,3 +98,20 @@ header
     line-height: 17px
     font-weight: 700
     margin-top: 2px
+
+.menuBtn
+  width: 60px
+  height: 60px
+  background: #FFFFFF
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05)
+  border: none
+  border-radius: 20px
+  padding: 15px 10px
+  &-line1, &-line2, &-line3
+    height: 6px
+    background-color: $c1
+    border: none
+    border-radius: 10px
+    margin-bottom: 6px
+  &-line3
+    width: 33.33px
