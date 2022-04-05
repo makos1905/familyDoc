@@ -1,7 +1,31 @@
 @font-face {
-  font-family: '';
-  src: url("../fonts/") format("woff2"), url("../fonts/") format("woff");
-  font-weight: normal;
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -28,7 +52,7 @@ html, body {
   font-size: 100%;
   line-height: 1;
   font-size: 10px;
-  font-family: "";
+  font-family: "Gilroy";
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -55,6 +79,7 @@ button::-moz-focus-inner {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -73,4 +98,129 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: normal;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 160px;
+}
+
+header .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23.4375%;
+}
+
+.logo img {
+  max-width: 95px;
+}
+
+.logo span {
+  width: 63.33333%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #099DBA;
+}
+
+.address span, .working span {
+  display: block;
+  color: #099DBA;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.address small, .working small {
+  color: #474551;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.address {
+  width: 14.84375%;
+  margin: 0 4.6875%;
+}
+
+.address small {
+  font-weight: 600;
+}
+
+.working {
+  width: 12.5%;
+}
+
+.working small {
+  font-weight: 400;
+}
+
+.social {
+  width: 5.07812%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+}
+
+.phones {
+  width: 13.90625%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-left: 60px;
+}
+
+.phones span {
+  color: #474551;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.phones small {
+  color: #099DBA;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  margin-top: 2px;
 }
