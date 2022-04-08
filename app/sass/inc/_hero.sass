@@ -1,0 +1,66 @@
+.hero
+  height: 700px
+  background: #f7f8fa url(../img/hero.jpg) center/contain no-repeat
+  padding: 92px 0
+  margin-bottom: 100px
+  &-content
+    flex-direction: column
+  &-title
+    flex: 0 1 100%
+    margin-bottom: 30px
+    & h1
+      max-width: 926px
+  &-subtitle
+    flex-basis: 100%
+    color: $c1
+    font-weight: 600
+    margin-bottom: 60px
+    & h3
+      max-width: 630px
+  &-text
+    display: flex
+    flex: 0 1 100%
+    color: $c5
+    font-size: 24px
+    line-height: 34px
+    font-weight: 400
+    margin-bottom: 60px
+    & span
+      max-width: 456px
+  &-cards
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-top: 82px
+  &-card
+    width: 409px
+    height: 150px
+    display: grid
+    grid-auto-rows: 34px 34px
+    grid-template-columns: 63px 1fr
+    grid-column-gap: 29.05px
+    grid-row-gap: 10px
+    align-items: center
+    background-color: $c4
+    padding: 20px 25px 36px 20px
+    box-shadow: $bsh
+    border-radius: 20px
+.card
+  &-img
+    display: flex
+    align-items: center
+    height: 100%
+    grid-row: span 2
+    align-items: end
+  &-title
+    // grid-area: card-title
+    color: $c1
+    font-weight: 600
+    font-size: 24px
+    line-height: 34px
+
+  &-text
+    // grid-area: card-text
+    font-weight: 400
+    font-size: 18px
+    line-height: 25px

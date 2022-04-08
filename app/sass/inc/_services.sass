@@ -1,0 +1,168 @@
+.services
+  &-cards
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 30px
+  &-card
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 630/$wc*100%
+    min-height: 560px
+    background-color: $c4
+    padding: 60px 0 40px 30px
+    border-radius: 20px
+    box-shadow: $bsh
+    &_big
+      width: 100%
+      padding: 0
+      & .services-title
+        margin-bottom: 60px
+      & small
+        color: $c1
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 9px
+    &-top
+      display: flex
+      padding: 60px 80px 30px
+    &-l
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      width: 550/$wc*100%
+    &-footer
+      display: flex
+      flex-direction: column
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../img/services/bg.jpg) center/cover no-repeat
+      padding: 60px 0 76px
+      border-radius: 0 0 20px 20px
+      &-ol
+        width: 100%
+        counter-reset: clearCount
+        margin-left: 80px
+        margin-bottom: 60px
+        & li
+          position: relative
+          display: flex
+          align-items: center
+          list-style: none
+          width: 770/$wc*100%
+          height: 120px
+          color: $c5
+          font-weight: 500
+          font-size: 20px
+          line-height: 28px
+          background-color: $c3
+          padding: 18px 127px 20px 157px
+          border-radius: 20px
+          margin-bottom: 30px
+          &::before
+            position: absolute
+            left: 27px
+            counter-increment: clearCount
+            content: counter(clearCount)
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100px
+            height: 100px
+            color: $sk
+            font-weight: 700
+            font-style: italic
+            font-size: 68px
+            line-height: 95px
+            background-color: #fff
+            border-radius: 50%
+            margin-right: 30px
+
+          @include margin-stairs(4, 110px)
+
+  &-title
+    width: 100%
+    color: $c1
+    font-weight: 600
+    font-size: 28px
+    line-height: 39px
+    margin-bottom: 9px
+  &-text
+    width: 366/630*100%
+    color: $c5
+    font-weight: 400
+    font-size: 18px
+    line-height: 25px
+    margin-bottom: auto
+  &-list
+    width: 391/630*100%
+    min-height: 201px
+    color: $c5
+    font-weight: 600
+    font-size: 22px
+    line-height: 40px
+    padding-left: 31px
+    & li
+      list-style: disc
+    &_light
+      width: 550/$wc*100%
+      font-weight: 500
+      & li
+        // margin-bottom: 15px
+  &-social
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 34px
+    & img
+      margin-right: 9px
+    & small
+      color: $c5
+      font-weight: 400
+      font-size: 18px
+      line-height: 21px
+      margin-left: 30px
+  &-btns
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+  &-btn
+    padding: 7.7px 31px
+    margin-right: 30px
+  &-img
+    position: absolute
+    top: 27px
+    right: 2px
+    width: 253/630*100%
+    & img
+      width: 100%
+      object-fit: cover
+  &-video
+    position: relative
+    width: 100%
+    height: 305px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 30px
+    &-bg
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &-play
+      position: absolute
+      z-index: 10
+      cursor: pointer
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))

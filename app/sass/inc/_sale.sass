@@ -1,0 +1,46 @@
+.sale
+  &-list
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 40px
+    flex-wrap: wrap
+  &-item
+    position: relative
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 410/$wc*100%
+  &-img
+    width: 100%
+    filter: drop-shadow($bsh)
+    border-radius: 20px
+    & img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-btn
+    position: absolute
+    bottom: 20/410*100%
+    background: rgba(255, 255, 255, 0.6)
+    padding: 7.7px 31px
+  &-pagination
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+  &-point
+    width: 18px
+    height: 18px
+    background-color: $c3
+    border-radius: 50%
+    margin-right: 20px
+    cursor: pointer
+    &--current
+      width: 24px
+      height: 24px
+      background-color: $c2

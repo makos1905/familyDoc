@@ -1,5 +1,5 @@
 // width container
-$wc: 1280
+$wc: 1290
 $wc2: 980
 
 //fonts
@@ -13,3 +13,11 @@ $c2: #33D9DA
 $c3: #BDF8F9
 $c4: #F3FEFE
 $c5: #474551
+
+//shadow
+$bsh: 0px 15px 20px rgba(0, 0, 0, 0.05)
+
+@mixin margin-stairs($count, $offset: 0px, $side: "left")
+  @for $i from 1 through $count
+    &:nth-child(#{$i})
+      margin-#{$side}: #{$offset * ($i - 1)}
